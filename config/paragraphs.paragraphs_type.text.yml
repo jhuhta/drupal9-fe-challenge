@@ -1,0 +1,10 @@
+uuid: 360cf58c-8ccd-424f-8c73-579cde782a3a
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: 'A component for formatted text.'
+behavior_plugins: {  }

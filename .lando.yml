@@ -1,0 +1,55 @@
+name: coredev9
+recipe: drupal9
+config:
+  php: '7.4'
+  #drush: ^10 # Actually using site-local Drush.
+  webroot: web
+  database: mariadb
+  via: nginx
+  xdebug: false
+services:
+  appserver:
+    build:
+      - composer install
+    overrides:
+      environment:
+        SIMPLETEST_BASE_URL: "http://appserver"
+        SIMPLETEST_DB: "sqlite://localhost/tmp/db.sqlite"
+        MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chrome:9515"]'
+        DRUSH_OPTIONS_URI: "https://coredev9.lndo.site"
+  chrome:
+    type: compose
+    services:
+      image: drupalci/webdriver-chromedriver:production
+      command: chromedriver --log-path=/tmp/chromedriver.log --verbose --whitelisted-ips=
+  node:
+    type: node
+    build:
+      - npm install
+
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+  yarn:
+    service: node
+  test:
+    service: appserver
+    cmd: "php /app/vendor/bin/phpunit -c /app/phpunit.xml"
+  drush:
+    service: appserver
+    options:
+      uri:
+        passthrough: true
+        default: https://coredev9.lndo.site
+  phpcs:
+    service: appserver
+    description: Run PHP Code Sniffer
+    cmd: cd /app/web && /app/vendor/bin/phpcs
+  phpcbf:
+    service: appserver
+    description: Run PHP Code Beautifier and Fixer
+    cmd: cd /app/web && /app/vendor/bin/phpcbf

@@ -1,0 +1,21 @@
+uuid: 24147ad8-bf69-4fd1-8c1e-d8c00e672be4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_app.field_title
+    - paragraphs.paragraphs_type.embedded_app
+id: paragraph.embedded_app.default
+targetEntityType: paragraph
+bundle: embedded_app
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

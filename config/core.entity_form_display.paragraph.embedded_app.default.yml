@@ -1,0 +1,23 @@
+uuid: dd835c0f-c215-40ac-806b-b6fde9262064
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embedded_app.field_title
+    - paragraphs.paragraphs_type.embedded_app
+id: paragraph.embedded_app.default
+targetEntityType: paragraph
+bundle: embedded_app
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

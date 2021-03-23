@@ -1,0 +1,17 @@
+.idea
+
+web/core
+vendor
+web/modules/contrib
+web/themes/contrib
+web/sites/**/files
+
+# Let's ignore some files we get on composer install.
+web/**/.gitignore
+
+# Ignore test stuff.
+web/tmp
+web/sites/simpletest
+
+# As .gitattributes comes with composer install, we don't want that either.
+.gitattributes

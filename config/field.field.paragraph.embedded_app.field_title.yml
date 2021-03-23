@@ -1,0 +1,19 @@
+uuid: e0814689-fce1-45d2-a100-82805116269a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.embedded_app
+id: paragraph.embedded_app.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: embedded_app
+label: Title
+description: 'Enter a title for this app component.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

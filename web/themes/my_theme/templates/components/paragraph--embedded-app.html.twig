@@ -1,0 +1,11 @@
+{% embed "paragraph.html.twig" %}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <h2>{{ content.field_title }}</h2>
+      {{ attach_library('my_app/my_app') }}
+      <div id="root"></div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+{% endembed %}

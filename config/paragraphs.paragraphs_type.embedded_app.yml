@@ -1,0 +1,10 @@
+uuid: 043dbdb6-ad39-4b24-b79c-3aa521bddcbb
+langcode: en
+status: true
+dependencies: {  }
+id: embedded_app
+label: 'Embedded app'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
