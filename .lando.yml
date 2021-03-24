@@ -1,4 +1,4 @@
-name: coredev9
+name: drupal9-fe-challenge
 recipe: drupal9
 config:
   php: '7.4'
