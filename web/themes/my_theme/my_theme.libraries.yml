@@ -1,7 +1,5 @@
 # Main theme library.
 global:
-  js:
-    js/my-theme.js: {}
   css:
     base:
       css/base/elements.css: {}

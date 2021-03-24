@@ -1,0 +1,9 @@
+<?php
+
+declare(strict_types = 1);
+
+function my_app_page_attachments(array &$page): void {
+  $hotels_json = file_get_contents('/app/web/modules/custom/my_app/hotels.json');
+  $hotels = json_decode($hotels_json, TRUE);
+  $page['#attached']['drupalSettings']['hotels'] = $hotels;
+}

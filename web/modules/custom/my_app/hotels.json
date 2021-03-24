@@ -1,0 +1,57 @@
+[
+  {
+    "id": "0",
+    "country": "Finland",
+    "city": "Turku",
+    "name": "Sokos Hotel Turku",
+    "price": "149,90",
+    "currency": "euro",
+    "isAvailable": true,
+    "hasSwimmingPool": false,
+    "imageUrl": "/modules/custom/my_app/img/federico-de-luca-TQE2kWqyFGk-unsplash.jpg"
+  },
+  {
+    "id": "1",
+    "country": "Spain",
+    "city": "Barcelona",
+    "name": "Grand Gracia",
+    "price": "199,90",
+    "currency": "euro",
+    "isAvailable": false,
+    "hasSwimmingPool": true,
+    "imageUrl": "/modules/custom/my_app/img/melissa-walker-horn-jsEftnpVh1U-unsplash.jpg"
+  },
+  {
+    "id": "2",
+    "country": "Finland",
+    "city": "Helsinki",
+    "name": "Hotel Haven",
+    "price": "299,90",
+    "currency": "euro",
+    "isAvailable": true,
+    "hasSwimmingPool": false,
+    "imageUrl": "/modules/custom/my_app/img/felipepelaquim-1qvUsVrKrMI-unsplash.jpg"
+  },
+  {
+    "id": "3",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "name": "Century Hotel",
+    "price": "149,90",
+    "currency": "euro",
+    "isAvailable": false,
+    "hasSwimmingPool": true,
+    "imageUrl": "/modules/custom/my_app/img/michiel-annaert-lC-kg3FZ3PM-unsplash.jpg"
+  },
+  {
+    "id": "4",
+    "countryCode": "FI",
+    "city": "Tampere",
+    "name": "Sokos Vaakuna Tampere",
+    "price": 99,
+    "currency": "euro",
+    "isAvailable": false,
+    "hasSwimmingPool": true,
+    "imageUrl": "/modules/custom/my_app/img/kevin-angelso-TArrnDJuxak-unsplash.jpg"
+  }
+]
