@@ -52,4 +52,4 @@ git repository, which you can share with us to be able to check the results.
 This simple Drupal 9 site and the assignment itself are based on the work by Sami Kolari
 (https://github.com/samipe/lean-ux-code-challenge) and Jari Nousiainen
 (https://github.com/jnous/drupal9-base). I just combined them and made some initial Drupal
-customizations required for the task.
+customizations required for the task. And thanks to Sami Hellsten for comments and fixes.
