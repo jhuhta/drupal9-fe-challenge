@@ -35,13 +35,14 @@ git repository, which you can share with us to be able to check the results.
 * Clean code, Drupal coding standards & other best practices are adhered to
 
 ## Some help for you
-* You might need to use at least following commands to make all this work:
-  * `composer install`
-  * `lando start`
-  * `lando drush cim -y`
+* Once you have everything in place, you'll get started by `lando start`.
+* After that, run `lando drush site:install --existing-config -y` to initialize the site.
+* To log in, use the credentials provided by the output of previous command, or,
+  use `lando drush user:login`.
 * The data consumed by your app is provided in the `drupalSettings` variable.
 * See My App module and My Theme custom theme for details.
-* Twig debug is already on, and the "Embedded app" paragraph type has a template for you to edit.
+* Twig debug is turned on in web/sites/development.services.yml, and the "Embedded app"
+  paragraph type has a twig template for you to edit.
 
 **Good luck with the task!**
 

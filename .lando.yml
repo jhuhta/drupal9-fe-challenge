@@ -16,7 +16,7 @@ services:
         SIMPLETEST_BASE_URL: "http://appserver"
         SIMPLETEST_DB: "sqlite://localhost/tmp/db.sqlite"
         MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chrome:9515"]'
-        DRUSH_OPTIONS_URI: "https://coredev9.lndo.site"
+        DRUSH_OPTIONS_URI: "https://drupal9-fe-challenge.lndo.site"
   chrome:
     type: compose
     services:
@@ -44,7 +44,7 @@ tooling:
     options:
       uri:
         passthrough: true
-        default: https://coredev9.lndo.site
+        default: https://drupal9-fe-challenge.lndo.site
   phpcs:
     service: appserver
     description: Run PHP Code Sniffer
