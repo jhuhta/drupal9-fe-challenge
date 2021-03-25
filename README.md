@@ -1,18 +1,19 @@
 # Drupal front end Code Challenge
-
-The given task is to build an app and present it running on a simple Drupal 9 site running on
+The task is to build an app and present it on a simple Drupal 9 site running on
 your own computer in a virtual development environment.
 
 ## How to return the project
-
 In an interview, you will be tasked to briefly demonstrate your deliverables.
 You also need to have the code, exported configuration and composer files committed to a
 git repository, which you can share with us to be able to check the results.
 
-## The task itself
+## Prerequisites
+* Clone this repository
+* Install Lando [https://docs.lando.dev/basics/installation.html]
+* Install Docker [https://docs.docker.com/get-docker/]
+* Set up Drupal 9 virtual environment (check below for further information)
 
-* Set up a Drupal 9 virtual environment using this repo, which you'll fork. You need to meet
-  the Lando & Docker requirements to be able to do that, and to install composer.
+## The task itself
 * Create a simple app depicted by the [video](Lean_UX_recruitment_task_demo.mov).
   * Don't set the ambitions level too high. It doesn't need to be pixel perfect, and not perfect
     in other ways either. "MVP level" is totally fine.
