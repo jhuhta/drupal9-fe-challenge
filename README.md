@@ -9,8 +9,8 @@ git repository, which you can share with us to be able to check the results.
 
 ## Prerequisites
 * Clone this repository
-* Install Lando [https://docs.lando.dev/basics/installation.html]
-* Install Docker [https://docs.docker.com/get-docker/]
+* Install Lando [according to the instructions](https://docs.lando.dev/basics/installation.html).
+  * Depending on your OS, you might have to install Docker first.
 * Set up Drupal 9 virtual environment (check below for further information)
 
 ## The task itself
@@ -44,6 +44,10 @@ git repository, which you can share with us to be able to check the results.
 * See My App module and My Theme custom theme for details.
 * Twig debug is turned on in web/sites/development.services.yml, and the "Embedded app"
   paragraph type has a twig template for you to edit.
+* For guidance on how to handle JS or CSS libraries in Drupal, you can get started by checking out
+  * [Attaching a library via Twig template](https://www.drupal.org/docs/theming-drupal/adding-stylesheets-css-and-javascript-js-to-a-drupal-theme#attach-library-specific-twig)
+  * [Twig in Drupal](https://www.drupal.org/docs/theming-drupal/twig-in-drupal)
+  * For overall Drupal understanding, just for reference: [Understanding Drupal](https://www.drupal.org/docs/understanding-drupal)
 
 **Good luck with the task!**
 
