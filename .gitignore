@@ -1,5 +1,7 @@
 .idea
 
+*~
+
 web/core
 vendor
 web/modules/contrib
@@ -15,3 +17,5 @@ web/sites/simpletest
 
 # As .gitattributes comes with composer install, we don't want that either.
 .gitattributes
+
+node_modules
