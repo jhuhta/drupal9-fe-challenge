@@ -1,0 +1,10 @@
+# Custom module library for general purposes.
+my_react_app:
+  version: 1.0
+  js:
+    js/dist/app.bundle.js: { minified: true }
+  css:
+    component:
+      css/my-react-app.css: {}
+  dependencies:
+    - core/drupalSettings

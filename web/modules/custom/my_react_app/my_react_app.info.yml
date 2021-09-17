@@ -1,0 +1,8 @@
+name: My React App
+type: module
+description: A placeholder module for embedding a React.js app.
+package: Custom
+core_version_requirement: ^9
+# The data is provided by my_app.
+dependencies:
+  - my_app:my_app

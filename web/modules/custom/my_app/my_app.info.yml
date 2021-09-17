@@ -1,6 +1,5 @@
 name: My App
 type: module
-description: A placeholder module for embedding a JS app.
+description: A placeholder module for embedding a JS app, includes Vue.js.
 package: Custom
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9

@@ -19,10 +19,12 @@ git repository, which you can share with us to be able to check the results.
     in other ways either. "MVP level" is totally fine.
   * You can omit the "VIEW DEAL" button from the video, and the view you get to after
     pressing the button.
-* Choose any stack you like. There is Vue.js library included as an example, but use whatever
-  you like. Just be ready to justify your choice.
+* Choose any stack you like. There is Vue.js library included as an example with
+  a sample JS file (the `my_app` module), and also a React starting kit with
+  simple hello world implementation (the `my_react_app` module).
 * Create a way to compile your css, if you use SASS/PostCSS/whatnot.
   You might need to edit your `.lando.yml` and do a `lando rebuild` in the process.
+* Use of CSS-in-JS approach with React is also ok.
 * Create a dummy node of type Basic page, where you embed this app you made.
 
 ## Evaluation criteria
@@ -38,10 +40,14 @@ git repository, which you can share with us to be able to check the results.
 ## Some help for you
 * Once you have everything in place, you'll get started by `lando start`.
 * After that, run `lando drush site:install --existing-config -y` to initialize the site.
+* The site will be at https://drupal9-fe-challenge.lndo.site/.
 * To log in, use the credentials provided by the output of previous command, or,
   use `lando drush user:login`.
-* The data consumed by your app is provided in the `drupalSettings` variable.
-* See My App module and My Theme custom theme for details.
+* Use `lando drush cr` to clear the Drupal render cache.
+* The data consumed by your app is provided in the global `drupalSettings` variable.
+* See My App and My React App modules and My Theme custom theme for details.
+  * Instructions for running Webpack for My React App are in module README.
+* The React app embedding is similar to what has been outlined in https://www.mediacurrent.com/blog/recipe-embedded-react-component-drupal/
 * Twig debug is turned on in web/sites/development.services.yml, and the "Embedded app"
   paragraph type has a twig template for you to edit.
 * For guidance on how to handle JS or CSS libraries in Drupal, you can get started by checking out
