@@ -8,7 +8,7 @@ You also need to have the code, exported configuration and composer files commit
 git repository, which you can share with us to be able to check the results.
 
 ## Prerequisites
-* Clone this repository
+* Fork & clone this repository
 * Install Lando [according to the instructions](https://docs.lando.dev/basics/installation.html).
   * Depending on your OS, you might have to install Docker first.
 * Set up Drupal 9 virtual environment (check below for further information)
@@ -39,6 +39,7 @@ git repository, which you can share with us to be able to check the results.
 
 ## Some help for you
 * Once you have everything in place, you'll get started by `lando start`.
+  * After the first start, you should commit `composer.lock` into your own repo.
 * After that, run `lando drush site:install --existing-config -y` to initialize the site.
 * The site will be at https://drupal9-fe-challenge.lndo.site/.
 * To log in, use the credentials provided by the output of previous command, or,
@@ -47,6 +48,9 @@ git repository, which you can share with us to be able to check the results.
 * The data consumed by your app is provided in the global `drupalSettings` variable.
 * See My App and My React App modules and My Theme custom theme for details.
   * Instructions for running Webpack for My React App are in module README.
+  * When running `npm` commands (such as `lando npm install`), remember to
+    change to the directory that contains the relevant `package.json` file,
+    e.g. `web/modules/custom/my_react_app`.
 * The React app embedding is similar to what has been outlined in https://www.mediacurrent.com/blog/recipe-embedded-react-component-drupal/
 * Twig debug is turned on in web/sites/development.services.yml, and the "Embedded app"
   paragraph type has a twig template for you to edit.
