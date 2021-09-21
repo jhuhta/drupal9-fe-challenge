@@ -7,6 +7,7 @@ vendor
 web/modules/contrib
 web/themes/contrib
 web/sites/**/files
+web/sites/**/settings.local.php
 
 # Let's ignore some files we get on composer install.
 web/**/.gitignore
